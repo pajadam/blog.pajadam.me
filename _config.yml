@@ -11,6 +11,12 @@ markdown: kramdown
 
 gems:
   - jekyll-press
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/posts/page:num/"
+
+permalink: /posts/:title/
 
 jekyll-press:
   exclude: [ 'sitemap.xml', 'robots.txt' ]

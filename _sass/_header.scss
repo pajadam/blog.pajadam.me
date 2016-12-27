@@ -1,9 +1,9 @@
 header{
     width: 100%;
     font-size: 32px;
-    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
     border-bottom: 2px solid rgba(0, 0, 0, .5);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important
+    background-color: rgba(0, 0, 0, .3);
 }
 
 header .inner{
@@ -28,9 +28,9 @@ header .center{
 }
 
 header .left a{
+    padding: 6px 32px;
     border-right: 2px dashed rgba(255, 255, 255, .5);
     margin-right: 32px;
-    padding: 6px 32px;
 }
 
 header .right{
@@ -47,9 +47,9 @@ header .right{
     }
 
     header .left a{
+        padding: 6px 12px;
         border-right: none;
         margin-right: 0px;
-        padding: 6px 12px;
     }
 }
 
