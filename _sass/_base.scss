@@ -17,6 +17,22 @@ body{
     background: radial-gradient(50%, #44A08D , #093637); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
 
+a, a:link, a:visited{
+    color: #999;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+a:hover,
+a:active,
+b{
+    color: #eee;
+}
+
+.reset{
+    clear:both;
+}
+
 @media screen and (max-width: 768px) {
 
 }
