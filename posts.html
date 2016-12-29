@@ -1,0 +1,28 @@
+---
+title: Blog posts
+layout: default
+description: >
+    Developer's blog about technologies, software, coding and more.
+    Feel free to check it out.
+---
+
+<div class="content">
+
+    <div class="nav">
+        <h1 class="icon-blog"> Blog posts</h1>
+        <a class="icon-home" title="Show all posts." href="/"> All posts</a>
+        <a class="icon-code" title="Show posts related to projects." href="/projects/"> Projects</a>
+        <div class="reset"></div>
+    </div>
+
+    {% for post in site.posts %}
+
+        {% unless post.categories contains 'project' %}
+
+            {% include post.html %}
+
+        {% endunless %}
+
+    {% endfor %}
+
+</div>
