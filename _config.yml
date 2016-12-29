@@ -13,8 +13,8 @@ gems:
   - jekyll-press
   - jekyll-paginate
 
-paginate: 6
-paginate_path: "/posts/page:num/"
+paginate: 10
+paginate_path: "/posts/:num/"
 
 permalink: /posts/:title/
 
