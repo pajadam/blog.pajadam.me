@@ -17,9 +17,28 @@
 .content h1{
     margin: 0px;
     padding: 8px;
+    margin-top: 32px;
     background-color: rgba(0, 0, 0, .75);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+
+.content .nav{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.content .nav a{
+    float: left;
+    width: 40%;
+    padding: 8px 5%;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.content .nav a:hover{
+    background-color: rgba(0, 0, 0, .85);
 }
 
 .content img{

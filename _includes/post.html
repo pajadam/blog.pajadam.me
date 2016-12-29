@@ -1,0 +1,14 @@
+<div class="post">
+    <a title="{{ post.title }}" href="{{ post.url}}" class="active title">{{ post.title }}</a>
+    <div class="date">{{ post.date | date: '%B %d, %Y' }} by <em>{{ site.author }}</em></div>
+
+    <div class="description">{{ post.description }}</div>
+
+    {% if post.img %}
+    <a title="{{ post.title }}" href="{{ post.url }}">
+        <img src="{{ post.img }}" alt="{{ post.title }}">
+    </a>
+    {% endif %}
+
+    <a title="{{ post.title }}" href="{{ post.url }}" class="button icon-right">read more</a>
+</div>

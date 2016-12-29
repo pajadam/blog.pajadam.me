@@ -4,22 +4,16 @@ layout: default
 
 <div class="content">
 
+    <div class="nav">
+        <h1 class="icon-home"> All posts</h1>
+        <a class="icon-blog" title="Show posts without projects." href="/posts/"> Blog posts</a>
+        <a class="icon-code" title="Show projects only." href="/projects/"> Projects</a>
+        <div class="reset"></div>
+    </div>
+
     {% for post in paginator.posts %}
 
-        <div class="post">
-            <a title="{{ post.title }}" href="{{ post.url}}" class="active title">{{ post.title }}</a>
-            <div class="date">{{ post.date | date: '%B %d, %Y' }} by <em>{{ site.author }}</em></div>
-
-            <div class="description">{{ post.description }}</div>
-
-            {% if post.img %}
-                <a title="{{ post.title }}" href="{{ post.url }}">
-                    <img src="{{ post.img }}" alt="{{ post.title }}">
-                </a>
-            {% endif %}
-
-            <a title="{{ post.title }}" href="{{ post.url }}" class="button icon-right">read more</a>
-        </div>
+        {% include post.html %}
 
     {% endfor %}
 
