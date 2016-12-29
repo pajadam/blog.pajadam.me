@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
 <meta name="robots" content="index, follow">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}">
 <link rel="canonical" href="{{ site.url }}">
 
 <title>{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}</title>
@@ -10,7 +10,7 @@
 <meta name="DC.Title" content="{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}">
 <meta name="DC.Creator" content="{{ site.author }}">
 <meta name="DC.Subject" content="{{ site.altname }}">
-<meta name="DC.Description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="DC.Description" content="{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}">
 <meta name="DC.Language" content="en">
 <meta name="DC.Rights" content="{{ site.url }}">
 
@@ -29,7 +29,7 @@
     "alternateName": "{{ site.altname }}",
     "url": "{{ site.url }}",
     "name": "{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}",
-    "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+    "description": "{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}"
 }
 </script>
 
