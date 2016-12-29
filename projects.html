@@ -1,0 +1,26 @@
+---
+title: Projects
+layout: default
+description: >
+    Take a look at projects that I've done in the past.
+    I hope you will find something interesting for yourself.
+    Just give it a try :)
+permalink: /projects/
+---
+
+<div class="content">
+
+    <div class="nav">
+        <h1 class="icon-code"> Projects</h1>
+        <a class="icon-home" title="Show all posts." href="/"> All posts</a>
+        <a class="icon-blog" title="Show posts except projects." href="/posts/"> Blog posts</a>
+        <div class="reset"></div>
+    </div>
+
+    {% for post in site.categories.project %}
+
+        {% include post.html %}
+
+    {% endfor %}
+
+</div>
