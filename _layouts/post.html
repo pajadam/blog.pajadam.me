@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>    
+    {% include head.html %}
+  </head>
+
+  <body>
+
+    <header>
+        {% include header.html %}
+    </header>
+    
+    <div class="container">
+
+      <div class="content">
+
+          <div class="post">
+              <div class="title">{{ page.title }}</div>
+              <div class="date">{{ page.date | date: '%B %d, %Y' }} by <em>{{ site.author }}</em></div>
+
+              <div class="text">
+                {{ content }}
+              </div>
+
+              <a href="/" class="button icon-link"> Strona Główna</a>
+              <a href="/projects/" class="button icon-code"> Projekty</a>
+
+          </div>
+
+      </div>
+        
+    </div>
+
+    <footer class="content">
+        {% include footer.html %}
+    </footer>
+    
+  </body>
+
+</html>
