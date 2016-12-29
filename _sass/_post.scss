@@ -1,0 +1,92 @@
+.post{
+    margin: 32px 0px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.post img{
+    border: 4px solid rgba(0, 0, 0, 0);
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.post a:hover img{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.post:last-child,
+.post:last-child .button{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.post .title{
+    color: #ddd;
+    display: block;
+    padding: 6px;
+    font-size: 1.8em;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.post .title:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.post .date{
+    color: #aaa;
+    padding: 4px;
+    font-size: .8em;
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.post .description{
+    padding: 16px 8px;
+    text-align: center;
+}
+
+.post .button{
+    display: block;
+    margin-top: 16px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.post .button:hover{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.paginate{
+    margin: 0px auto;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.paginate .button{
+    width: 30px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.paginate .button:first-child{
+    margin-right: 3px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.paginate .button:last-child{
+    margin-left: 3px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.paginate .active:hover{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+@media screen and (max-width: 768px) {
+    .post .description{
+        text-align: justify;
+    }
+}
