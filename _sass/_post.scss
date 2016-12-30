@@ -13,12 +13,6 @@
     background-color: rgba(0, 0, 0, .6);
 }
 
-.post:last-child,
-.post:last-child .button:last-child{
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-}
-
 .post .title{
     color: #ddd;
     display: block;
@@ -88,7 +82,6 @@
     margin: 0px auto;
     display: inline-block;
     text-align: center;
-    border-radius: 8px;
     margin-bottom: 32px;
     background-color: rgba(0, 0, 0, .6);
 }
@@ -101,14 +94,10 @@
 
 .paginate .button:first-child{
     margin-right: 3px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 
 .paginate .button:last-child{
     margin-left: 3px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .paginate .active:hover{
