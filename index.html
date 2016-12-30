@@ -4,13 +4,6 @@ layout: default
 
 <div class="content">
 
-    <div class="nav">
-        <h1 class="icon-home"> All posts</h1>
-        <a class="icon-blog" title="Show posts without projects." href="/posts/"> Blog posts</a>
-        <a class="icon-code" title="Show projects only." href="/projects/"> Projects</a>
-        <div class="reset"></div>
-    </div>
-
     {% for post in paginator.posts %}
 
         {% include post.html %}

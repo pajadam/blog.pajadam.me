@@ -2,11 +2,6 @@
     text-align: center;
 }
 
-.container .content{
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-}
-
 .content{
     margin: 0px auto;
     padding: 0px;
@@ -19,26 +14,6 @@
     padding: 8px;
     margin-top: 32px;
     background-color: rgba(0, 0, 0, .75);
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.content .nav{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.content .nav a{
-    float: left;
-    width: 40%;
-    padding: 8px 5%;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, .6);
-}
-
-.content .nav a:hover{
-    background-color: rgba(0, 0, 0, .85);
 }
 
 .content img{
@@ -50,10 +25,6 @@
 }
 
 @media screen and (max-width: 976px) {
-    .content{
-        border-radius: 0px;
-    }
-
     .content img{
         max-width: 95%;
     }

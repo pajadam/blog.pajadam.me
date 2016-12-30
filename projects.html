@@ -10,13 +10,6 @@ permalink: /projects/
 
 <div class="content">
 
-    <div class="nav">
-        <h1 class="icon-code"> Projects</h1>
-        <a class="icon-home" title="Show all posts." href="/"> All posts</a>
-        <a class="icon-blog" title="Show posts except projects." href="/posts/"> Blog posts</a>
-        <div class="reset"></div>
-    </div>
-
     {% for post in site.categories.project %}
 
         {% include post.html %}
