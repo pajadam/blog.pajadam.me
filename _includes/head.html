@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
 <meta name="robots" content="index, follow">
 <meta name="description" content="{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}">
-<link rel="canonical" href="{{ site.url }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
 
 <title>{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}</title>
 
@@ -14,7 +14,7 @@
 <meta name="DC.Language" content="en">
 <meta name="DC.Rights" content="{{ site.url }}">
 
-<meta property="og:url" content="{{ site.url }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{{ site.altname }} - Developer Website">
@@ -27,7 +27,7 @@
     "@context": "http://www.schema.org",
     "@type": "WebSite",
     "alternateName": "{{ site.altname }}",
-    "url": "{{ site.url }}",
+    "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}",
     "name": "{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}",
     "description": "{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}"
 }
