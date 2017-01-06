@@ -49,8 +49,15 @@
 
 .post .text .info{
     padding: 6px 24px;
+    font-size: 1.25em;
     font-style: italic;
     background-color: rgba(0, 0, 0, .4);
+}
+
+.post .text .info.sub{
+    font-size: 1em;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .post .text .link{
@@ -115,5 +122,9 @@
 
     .post .text p{
         padding: 12px;
+    }
+
+    .post .text .info{
+        font-size: 1.1em;
     }
 }
