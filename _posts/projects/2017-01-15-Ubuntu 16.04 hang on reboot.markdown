@@ -1,0 +1,108 @@
+--- 
+layout: post 
+title: "Ubuntu 16.04 hang on reboot." 
+date: 2017-01-15 12:48:00 +0200 
+categories: post
+img: /data/posts/ubuntu/hang_0.png
+description: >
+    My VPS powered by Ubuntu 16.04 had a problem with shutting down/reboot. 
+    Finally problem is gone!
+---
+<a title="Ubuntu 16.04 hangs on reboot." href="/data/posts/ubuntu/hang_0.png">
+    ![Ubuntu 16.04 hangs on reboot.](/data/posts/ubuntu/hang_0.png)
+</a>
+
+<p>
+    My VPS had a problem with shutdown and reboot for a long time.
+    I tried to fix it earlier, unsuccessfully.
+    Maybe Ubuntu 16.04 hanged when systemd was stopping services?
+    I logged into DigitalOcean console and there was no errors.
+    I had no clue why it does not work, so I've started digging...
+</p>
+
+<div class="info">
+    Let's fix it!
+</div>
+
+<p>
+    First of all - logs. I checked all logs from time when I issued reboot command.
+    Nothing special, no errors. I decided to stop all services 
+    installed by me manually ( e.g. nginx ) and tried reboot again - with no success.
+    I thought that it may be caused by <em>systemd</em> waiting for service to stop. 
+    Last time I was waiting only 1 minute, till I forced server reboot, 
+    so next time I gave it more time. Additionally I've changed <em>systemd</em> stop timeout:
+</p>
+
+{% highlight bash %}
+# /etc/systemd/system.conf
+
+#DefaultTimeoutStopSec=90s
+DefaultTimeoutStopSec=15s
+{% endhighlight %}
+
+<p>
+    Now I was waiting 30 mins and nothing happens... again. But before
+    forcing reboot, I looked at the console output and noticed something interesting...
+    One line of the console output was strange. Normally <em>systemd</em> informs you when service stopped successfully or not. 
+    But this line was not followed by <em>"[ OK ] Stopped"</em> or even <em>"[FAILED]"</em> message.
+    It was something like this ( may be inaccurate, I forgot to take a screenshot ):
+</p>
+
+{% highlight bash %}
+# successfully stopped some
+# other services, but never
+# stopped ... rc.local ...
+...
+         Stopping ... rc.local ...
+         Stopping nginx...
+         Stopping transmission-daemon...
+[  OK  ] Stopped nginx.
+[  OK  ] Stopped transmission-daemon.
+# hanged there.
+{% endhighlight %}
+
+<p>
+    It was a last clue... I needed to check what's going on in <em>rc.local</em> file. 
+    Let's find out what's in here...
+</p>
+
+{% highlight bash %}
+#!/bin/sh -e
+#
+# rc.local
+#
+# ...
+#
+
+uwsgi --ini /etc/uwsgi/emperor.ini  --touch-reload=/home/django/sac-webapp/reload.ini &
+
+exit 0
+{% endhighlight %}
+
+<p>
+    There was a startup script for my <em>UWSGI</em> server.
+    Nothing special, I was wondering how it could prevent my server reboot. 
+    I removed this line and tried to reboot...
+    Fail. Ubuntu hangs out again... I decided to give it a last try,
+    just to make sure... and BOOM! Reboot complete correctly in less than 30s! <b>Problem solved</b>!
+</p>
+
+<div class="info">
+    Now it works like a charm!
+</div>
+
+<p>
+    But hey... what about <em>UWSGI</em>? It must be started automatically.
+    Quick Google session -> cron @reboot! Cool, so I've created script 
+    called <em>boot.sh</em> in my <em>"~/tools"</em> directory with uwsgi start command, and
+    finally added <em>crontab</em> entry. Remember about correct access rights to script file!
+</p>
+
+{% highlight bash %}
+# /home/pajadam/tools/boot.sh
+uwsgi --ini /etc/uwsgi/emperor.ini  --touch-reload=/home/django/sac-webapp/reload.ini &
+
+# sudo crontab -l
+...
+@reboot '/home/pajadam/tools/boot.sh'
+{% endhighlight %}
