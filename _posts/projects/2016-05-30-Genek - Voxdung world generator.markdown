@@ -3,13 +3,13 @@ layout: post
 title: "Genek - Voxdung world generator" 
 date: 2016-05-30 21:30:59 +0200 
 categories: project
-img: /data/posts/genek/genek_0.PNG
+img: /data/posts/genek/genek_0.jpg
 description: >
     Genek is small world generator written in 6 days for Warsztat.GD compo. 
     Written in C++, gui using NANA++ library.
 ---
-<a title="Map preview - bridge." href="/data/posts/genek/genek_0.PNG">
-    ![Preview Bridge](/data/posts/genek/genek_0.PNG)
+<a title="Map preview - bridge." href="/data/posts/genek/genek_0.jpg">
+    ![Preview Bridge](/data/posts/genek/genek_0.jpg)
 </a>
 
 <p>
@@ -35,8 +35,8 @@ description: >
 </a>
 
 <div class="info">Map showcase ( seed "KAPPA" )</div>
-<a title="Seed 'Kappa' screenshot #1" href="/data/posts/genek/genek_3.PNG">
-    ![Seed "Kappa" #1](/data/posts/genek/genek_3.PNG)
+<a title="Seed 'Kappa' screenshot #1" href="/data/posts/genek/genek_3.jpg">
+    ![Seed "Kappa" #1](/data/posts/genek/genek_3.jpg)
 </a>
 <a title="Seed 'Kappa' screenshot #2" href="/data/posts/genek/genek_1.PNG">
     ![Seed "Kappa" #2](/data/posts/genek/genek_1.PNG)

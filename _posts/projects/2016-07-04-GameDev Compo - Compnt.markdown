@@ -3,13 +3,13 @@ layout: post
 title: "GameDev Compo - Compnt" 
 date: 2016-07-04 13:23:30 +0200 
 categories: project
-img: /data/posts/compnt/compnt_0.png
+img: /data/posts/compnt/compnt_0.jpg
 description: >
     Compnt - the game written in 7 days, in Java using LibGDX graphics library.
 ---
 
-<a title="Compnt lost screen." href="/data/posts/compnt/compnt_0.png">
-    ![Compnt](/data/posts/compnt/compnt_0.png)
+<a title="Compnt lost screen." href="/data/posts/compnt/compnt_0.jpg">
+    ![Compnt](/data/posts/compnt/compnt_0.jpg)
 </a>
 
 <p>

@@ -3,12 +3,12 @@ layout: post
 title: "GameDev Compo - Copters in Box" 
 date: 2014-12-14 23:37:37 +0200 
 categories: project
-img: /data/posts/copters/copters_0.png
+img: /data/posts/copters/copters_0.jpg
 description: >
     Swing Copters clone written in 2 days for Warsztat.gd GameDev Compo.
 ---
-<a title="Copters in Box preview" href="/data/posts/copters/copters_0.png">
-    ![Copters in Box](/data/posts/copters/copters_0.png)
+<a title="Copters in Box preview" href="/data/posts/copters/copters_0.jpg">
+    ![Copters in Box](/data/posts/copters/copters_0.jpg)
 </a>
 
 <p>
@@ -28,9 +28,9 @@ description: >
    class="link icon-link" title="Copters in Box for 64 bit Linux."> Linux x86_64</a>
 
 <div class="info">Options and Gameplay</div>
-<a title="Game options" href="/data/posts/copters/copters_1.png">
-    ![Game options](/data/posts/copters/copters_1.png)
+<a title="Game options" href="/data/posts/copters/copters_1.jpg">
+    ![Game options](/data/posts/copters/copters_1.jpg)
 </a>
-<a title="Copters in Box Gameplay" href="/data/posts/copters/copters_2.png">
-    ![Copters in Box Gameplay](/data/posts/copters/copters_2.png)
+<a title="Copters in Box Gameplay" href="/data/posts/copters/copters_2.jpg">
+    ![Copters in Box Gameplay](/data/posts/copters/copters_2.jpg)
 </a>
