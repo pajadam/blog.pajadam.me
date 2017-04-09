@@ -11,9 +11,9 @@ description: >
     {% for post in site.posts %}
 
         {% unless post.categories contains 'project' %}
-
-            {% include post.html %}
-
+            <article>
+                {% include post.html %}
+            </article>
         {% endunless %}
 
     {% endfor %}

@@ -5,9 +5,9 @@ layout: default
 <div class="content">
 
     {% for post in paginator.posts %}
-
-        {% include post.html %}
-
+        <article>
+            {% include post.html %}
+        </article>
     {% endfor %}
 
 </div>

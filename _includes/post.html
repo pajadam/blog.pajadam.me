@@ -1,6 +1,8 @@
 <div class="post">
-    <a title="{{ post.title }}" href="{{ post.url}}" class="active title">{{ post.title }}</a>
-    <div class="date">{{ post.date | date: '%B %d, %Y' }} by <em>{{ site.author }}</em></div>
+    <header>
+        <a title="{{ post.title }}" href="{{ post.url}}" class="active title">{{ post.title }}</a>
+        <div class="date">{{ post.date | date: '%B %d, %Y' }} by <em>{{ site.author }}</em></div>
+    </header>
 
     <div class="description">{{ post.description }}</div>
 

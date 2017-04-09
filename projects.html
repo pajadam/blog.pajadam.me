@@ -11,9 +11,9 @@ permalink: /projects/
 <div class="content">
 
     {% for post in site.categories.project %}
-
-        {% include post.html %}
-
+        <article>
+            {% include post.html %}
+        </article>
     {% endfor %}
 
 </div>

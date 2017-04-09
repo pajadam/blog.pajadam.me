@@ -1,4 +1,4 @@
-header{
+.header{
     width: 100%;
     font-size: 32px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
@@ -6,47 +6,47 @@ header{
     background-color: rgba(0, 0, 0, .3);
 }
 
-header .inner{
+.header .inner{
     margin: 0px auto;
     padding: 6px 0px;
     max-width: 960px;
 }
 
-header .inner a{
+.header .inner a{
     padding: 6px 12px;
     font-weight: bold;
 }
 
-header .inner a:hover{
+.header .inner a:hover{
     background-color: rgba(0, 0, 0, .5);
 }
 
-header .left,
-header .center{
+.header .left,
+.header .center{
     float: left;
     color: rgba(255, 255, 255, .5);
 }
 
-header .left a{
+.header .left a{
     padding: 6px 32px;
     border-right: 2px dashed rgba(255, 255, 255, .5);
     margin-right: 32px;
 }
 
-header .right{
+.header .right{
     float: right;
 }
 
 @media screen and (max-width: 768px) {
-    header{
+    .header{
         font-size: 26px;
     }
 
-    header .center{
+    .header .center{
         display: none;
     }
 
-    header .left a{
+    .header .left a{
         padding: 6px 12px;
         border-right: none;
         margin-right: 0px;
@@ -54,7 +54,7 @@ header .right{
 }
 
 @media screen and (min-width: 1280px) {
-    header{
+    .header{
         font-size: 36px;
     }
 }
