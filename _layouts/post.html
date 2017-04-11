@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +19,7 @@
 
         <div class="content">
             <article>
+              
               <div class="post">
                   <header>
                     <div class="title">{{ page.title }}</div>
@@ -26,14 +29,40 @@
                   <div class="text">
                     {{ content }}
                   </div>
-
-                  <footer>
-                    <a title="Home page" href="/" class="button icon-home"> Homepage</a>
-                    <a title="Blog posts" href="/posts/" class="button icon-blog"> Blog posts</a>
-                    <a title="Projects" href="/projects/" class="button icon-code"> Projects</a>
-                  </footer>
-
+                  <div class="divider"></div>
               </div>
+
+              <article>
+                <div class="post">
+                    <div class="title">Comments</div>
+
+                    <div id="disqus_thread"></div>
+                    <script>
+                      var disqus_config = function () {
+                      this.page.url = "{{ site.url }}{{ page.url | replace:'index.html',''}}";
+                      this.page.identifier = "{{ site.url }}{{ page.url | replace:'index.html',''}}";
+                      };
+
+                      (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://blog-pajadam-me.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                      })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+                
+              </article>
+
+              <footer>
+                <div class="post">
+                  <a title="Home page" href="/" class="button icon-home"> Homepage</a>
+                  <a title="Blog posts" href="/posts/" class="button icon-blog"> Blog posts</a>
+                  <a title="Projects" href="/projects/" class="button icon-code"> Projects</a>
+                </div>
+              </footer>
+
             </article>
         </div>
           

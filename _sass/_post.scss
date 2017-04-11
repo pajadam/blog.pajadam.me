@@ -37,6 +37,7 @@
     text-align: center;
 }
 
+#disqus_thread,
 .post .text p{
     margin: 0px;
     padding: 16px;
@@ -120,6 +121,7 @@
         text-align: justify;
     }
 
+    .post.comments,
     .post .text p{
         padding: 12px;
     }
