@@ -35,7 +35,9 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{{ site.altname }} - Developer Website">
 
-<script type='application/ld+json'> 
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ site.url }}/feed.xml" />
+
+<script type='application/ld+json'>
 {
     "@context": "http://www.schema.org",
     "@type": "WebSite",
