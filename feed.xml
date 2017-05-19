@@ -6,16 +6,30 @@
 <channel>
   <title>{{ site.title }}</title>
   <link>{{ site.url }}</link>
+  <language>en-us</language>
   <description>{{ site.description }}</description>
+
+  <image>
+    <url>{{ site.url }}/data/favicon/android-chrome-512x512.png</url>
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}</link>
+  </image>
 
   {% for post in site.posts limit:20 %}
   <item>
     <title>{{ post.title }}</title>
     <link>{{ site.url }}{{ post.url }}</link>
-    <description>{{ post.description }}</description>
+    <description>
+      <![CDATA[
+        {{ post.description }}
+        <img src="{{ site.url }}{{ post.img }}" alt="{{ post.title }}">
+      ]]>
+    </description>
+    <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
   </item>
   {% endfor %}
 
 </channel>
 
 </rss>
+
