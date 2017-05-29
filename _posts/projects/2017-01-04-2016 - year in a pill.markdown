@@ -1,0 +1,107 @@
+---
+layout: post
+title: "2016 - year in a pill"
+date: 2017-01-04 20:39:00 +0200
+categories: post
+img: /data/posts/2016/year_0.png
+description: >
+    2016 year summary. My personal achievements and some details about my activity.
+    Mostly stuff related to programming.
+---
+<a title="2016 year in a pill." href="/data/posts/2016/year_0.png">
+    ![2016 year in a pill](/data/posts/2016/year_0.png)
+</a>
+
+<p>
+    Last year was a breakthrough for me. I've done a lot of cool stuff,
+    includes things like my first job, some won competitions and other cool stuff.
+    Now it's the time to summary all the things that happened in the 2016. Let's start.
+</p>
+
+<div class="info">School</div>
+
+<p>
+    I finished junior high school and finally went to highschool with informatic direction!
+    My new school is rather boring. Except normal school subjects like math,
+    geography or history I have some technical subjects related to computers.
+    There's a lot of basics ( like logic gates or cpu registers ), explained for people that never saw computer,
+    nothing interesting. I hope it will be much more interesting in the next class.
+</p>
+
+<div class="info">Competitions</div>
+
+<p>
+    This year was so successful in terms of programming competitions.
+    I've made few cool projects. Some of them took first place!
+    I was using variety of cool technologies, like Java, C++, Assembly!
+    I've done 3 games, program calculating light based on terrain
+    that comes with attached bitmaps and bootloader graphics art for Gynvael's OS.
+    Check out some of this projects, links below.
+</p>
+
+<a title="Genek world generator." href="/posts/Genek-Voxdung-world-generator/"
+   class="link icon-link"> Genek</a>
+<a title="Compnt 2D tapping game." href="/posts/GameDev-Compo-Compnt/"
+   class="link icon-link"> Compnt</a>
+<a title="XOXOXO console game." href="/posts/XOXOXO-Console-can-be-beautiful/"
+   class="link icon-link"> XOXOXO</a>
+<a title="Warsztat.gd light calculations compo." href="http://forum.warsztat.gd/index.php?topic=30508.0"
+   class="link icon-link-ext"> Light calculations</a>
+<a title="Bootloader for Gynvael.Coldwind OS" href="/posts/Bootloader-for-Gynvael.Coldwind-OS/"
+   class="link icon-link"> Bootloader art</a>
+
+<div class="info">My own server</div>
+
+<p>
+    With the help of Github Student Developer Pack, I run my own VPS server
+    on Digital Ocean and domain. It helped me a lot to start playing with
+    servers a little bit and learn something about administrating servers,
+    keeping it secure etc. I'm using it as a webserver, using NGINX server,
+    IRC client (Weechat), screenshot server, teamspeak3 server and more!
+    I will explain software on my server in the future.<br><br>
+    If you want some good VPS server on Digital Ocean you can use my referral
+    link. It will give you $10 to spent, so it's definitely worth it.
+</p>
+
+<a title="Digital Ocean referral" href="https://m.do.co/c/da61e98ced76"
+   class="link icon-link-ext"> Digital Ocean</a>
+
+<div class="info">Commercial projects</div>
+
+<p>
+    Second half of a year was very productive. I've made two websites with me and my friend for
+    local businesses. First website was built by coworking with SEO, second one 100% by us.
+    My friend was responsible for graphics and design, while code is 100% mine. We've learned a lot
+    about web development and cooperating with clients. Some elements of these website could be made in another way,
+    but we respected clients feedback so it is like they want it. You can take a look at our websites using links below.
+    There's one more big project that I'm working on. It's a webapp written in Django assisting
+    some specific type of buisness. Currently in development under the watchful eye of our founder.
+</p>
+
+<a title="Kserokopiarki Prima" href="https://prima.org.pl"
+   class="link icon-link-ext"> Kserokopiarki Prima</a>
+<a title="MotoDudek" href="https://motodudek.pl"
+   class="link icon-link-ext"> MotoDudek</a>
+
+<div class="info">Personal projects</div>
+
+<p>
+    At the end of year I've started two more projects. I wanted to have my own
+    portfolio (about me) website and better blog. It should be simple and as fast as possible,
+    so my choice was pretty obvious - Jekyll. Jekyll is a static site generator with
+    blog like structure support, even with pagination. Now you are probably looking at blog,
+    but you can click top-right <em>"About"</em> button to visit portfolio site.
+    Also you can take a look at the actual code too! Whole source code is on my github profile, links below.
+</p>
+
+<a title="About me" href="https://github.com/pajadam/pajadam.me"
+   class="link icon-github"> About me</a>
+<a title="Blog" href="https://github.com/pajadam/blog.pajadam.me"
+   class="link icon-github"> Blog</a>
+
+
+<div class="info">Summary</div>
+
+<p>
+    It was a good year. I hope that 2017 will be as good as 2016 was.
+</p>
