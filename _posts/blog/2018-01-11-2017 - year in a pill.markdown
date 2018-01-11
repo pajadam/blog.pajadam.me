@@ -1,0 +1,180 @@
+---
+layout: post
+title: "2017 - year in a pill"
+date: 2018-01-11 15:31:00 +0200
+categories: post
+img: /data/posts/2017/year_0.jpg
+description: >
+    2017 year summary. My personal achievements and some details about my activity. Mostly IT related stuff.
+---
+<a title="2017 year in a pill." href="/data/posts/2017/year_0.jpg">
+    ![2017 year in a pill](/data/posts/2017/year_0.jpg)
+</a>
+
+<p>
+    2017 was pretty challenging for me. I've spent my time mostly
+    working on my new "big" project. Besides that I've done some
+    small things as well.
+</p>
+
+<div class="info">Workspace upgrade</div>
+<div class="sub info">Computer</div>
+
+<a title="My new PC" href="/data/posts/2017/year_3.jpg">
+    ![My new PC](/data/posts/2017/year_3.jpg)
+</a>
+
+<p>
+    At the beginning of 2017 I finally saved enough money to upgrade
+    my workspace. I've been switching from old and slow Celeron G1620
+    Ivy Bridge CPU to new Z270 platform, but I don't wanted to throw
+    all money in my new PC - so I've bought solid base for upgrading
+    in future.
+</p>
+
+{% highlight bash %}
+# Details
+MOBO: Gigabyte GA-Z270-HD3P
+CPU:  Intel Pentium G4560 CPU
+RAM:  HyperX 8GB 2400MHz CL15
+SSD:  GoodRAM CX200 120GB
+PSU:  Be quiet! System Power 8 400W
+{% endhighlight %}
+
+<p>
+    It gives me decent performance and of course it's a lot better than G1620 ;)
+</p>
+
+<div class="sub info">Peripherals</div>
+
+<a title="My new workspace" href="/data/posts/2017/year_4.jpg">
+    ![My new workspace](/data/posts/2017/year_4.jpg)
+</a>
+
+<p>
+    Moving on to peripherals. I bought second monitor and replaced my mouse and keyboard.
+    I've also mounted my monitors on the wall and I put a mascot on one of them ;)
+</p>
+
+{% highlight bash %}
+# Details
+Monitor:  iiyama X2483HSU 1920x1080
+Mouse:    Roccat Lua
+Keyboard: Logitech k280e
+{% endhighlight %}
+
+<div class="info">Competitions</div>
+
+<a title="Guru Panic of Death by pajadam" href="/data/posts/2017/year_1.png">
+    ![Guru Panic of Death by pajadam](/data/posts/2017/year_1.png)
+</a>
+
+<p>
+    I won competition organized by Gynvael on polish livestreams.
+    The competition consisted in creation of Blue Screen of Death
+    for OS that Gynvael made on Livestream. My entry was the most
+    complicated one, as it operates on graphical mode instead of
+    text mode. I've managed to modify terminal backend to handle
+    graphical mode with proper monospace font rendering.
+</p>
+
+<a title="Guru Panic of Death" href="http://gynvael.coldwind.pl/?lang=pl&id=648"
+   class="link icon-link-ext"> Guru Panic of Death</a>
+<a title="Source of my Guru Panic of Death entry" href="https://github.com/pajadam/stream/tree/master/competition-osdev-08-pajadam"
+   class="link icon-github"> Source</a>
+<a title="Gynvael Coldwind" href="http://gynvael.coldwind.pl/"
+   class="link icon-link-ext"> Gynvael</a>
+
+<p>
+    I've also successfully tried to solve Gynvael's mission 008 (Polish).
+    You can find my polish write-up down below.
+</p>
+
+<a title="Polish write-up - Gynvael's mission 008" href="/posts/Misja-Gynvaela-008/"
+   class="link icon-blog"> Mission 008 write-up [PL]</a>
+
+<div class="info">Websites</div>
+<div class="sub info">Centrum Iskierka</div>
+
+<a title="Centrum Iskierka preview" href="/data/posts/2017/year_2.jpg">
+    ![Centrum Iskierka preview](/data/posts/2017/year_2.jpg)
+</a>
+
+<p>
+    This year I've made only one website. Unfortunately this is the
+    only one website as I was focused on my web application. But I
+    think that it looks good, it's simple and clean. It's way better
+    than previous one.
+</p>
+
+<a title="Centrum Iskierka" href="http://centrumiskierka.pl"
+   class="link icon-link-ext"> Centrum Iskierka</a>
+
+<div class="sub info">My blog and landing page</div>
+
+<p>
+    I've also improved look my blog, but it still lacks some content.
+    I've started upgrading my landing page too! It looks good, but
+    it's kinda empty. I'm working on that ;)
+</p>
+
+<a title="My landing page" href="https://pajadam.me"
+   class="link icon-about"> pajadam.me</a>
+
+<div class="info">Future business</div>
+
+<a title="Codename SAC" href="/data/posts/2017/year_5.png">
+    ![Codename SAC](/data/posts/2017/year_5.png)
+</a>
+
+<p>
+    Most of time I was working on my future business. I'm creating
+    application since Q3 of 2016. There's a hole in the market and
+    I plan to make use of it as good as possible. Nothing similar
+    ever existed so I hope that application will remain the only one
+    existing solution.
+</p>
+
+<div class="sub info">Beginnings</div>
+
+<p>
+    Project started from idea of one of my earlier client, that I've done
+    website for. I teamed up with him to get more informations about industry
+    needs, feature request, get some feedback and testing in action. I've done
+    a lot of research from technical side to pick technologies matching project
+    needs. I finally chose Django with Postgres as database, and Semantic UI as
+    a frontend framework. I don't regret this choice - huge extendability, decent
+    performance and low entry point - they speak for themselves. The work has
+    been started...
+</p>
+
+<div class="sub info">Current state</div>
+
+<p>
+    Now, application is used on production for about 4 months now, but still
+    remains unreleased. I'm constantly improving and extending its features,
+    while listening to feedback and ideas too.
+</p>
+
+<p>
+    I don't want to talk about functionality of this project yet.
+    There's still a lot to be done. I don't even have a proper branding
+    such as logo, project name and promotional page. The proper project
+    announcement will probably take place at the end of Q2 2018.
+</p>
+
+<p>
+    I've learned a lot during this project, and this is just the beginning.
+    It still needs some features, branding and UI improvements. I've also
+    need to dig into marketing of this kind of projects. I will try to share
+    my experiences through my blog, but no promises. I'm not a good blogger ;)
+</p>
+
+<div class="info">Summary</div>
+
+<p>
+    I'm not entirely happy with this year. I've done quite a lot in my main project,
+    but I've also wasted too much time on useless ideas, that ended up deleted and
+    forgotten. Hopefully I won't repeat my mistakes - lessons have been learned.
+    I will take them into account in the new year ;)
+</p>
