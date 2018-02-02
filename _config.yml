@@ -7,8 +7,6 @@ author: Adam Pajkert
 baseurl: ""
 url: "https://blog.pajadam.me"
 
-analytics_id: "UA-77141286-4"
-
 markdown: kramdown
 
 plugins:
