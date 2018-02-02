@@ -3,8 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>    
+  <head>
     {% include head.html %}
+    <meta id="disqus-data" data-url="{{ site.url }}{{ page.url | replace:'index.html',''}}" data-identifier="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+    <script type="text/javascript" defer src="/data/js/disqus.js"></script>
   </head>
 
   <body>
@@ -12,14 +14,14 @@
     <header>
         {% include header.html %}
     </header>
-    
+
     <main>
 
       <div class="container">
 
         <div class="content">
             <article>
-              
+
               <div class="post">
                   <header>
                     <div class="title">{{ page.title }}</div>
@@ -37,22 +39,8 @@
                     <div class="title">Comments</div>
 
                     <div id="disqus_thread"></div>
-                    <script>
-                      var disqus_config = function () {
-                      this.page.url = "{{ site.url }}{{ page.url | replace:'index.html',''}}";
-                      this.page.identifier = "{{ site.url }}{{ page.url | replace:'index.html',''}}";
-                      };
-
-                      (function() {
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://blog-pajadam-me.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                      })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 </div>
-                
+
               </article>
 
               <footer>
@@ -65,7 +53,7 @@
 
             </article>
         </div>
-          
+
       </div>
 
     </main>
@@ -73,7 +61,7 @@
     <footer class="content">
         {% include footer.html %}
     </footer>
-    
+
   </body>
 
 </html>
