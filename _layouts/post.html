@@ -3,65 +3,69 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    {% include head.html %}
-    <meta id="disqus-data" data-url="{{ site.url }}{{ page.url | replace:'index.html',''}}" data-identifier="{{ site.url }}{{ page.url | replace:'index.html',''}}">
-    <script type="text/javascript" defer src="/data/js/disqus.js"></script>
-  </head>
+<head>
+	{% include head.html %}
+</head>
 
-  <body>
+<body>
 
-    <header>
-        {% include header.html %}
-    </header>
+	<header>
+		{% include header.html %}
+	</header>
 
-    <main>
+	<main>
 
-      <div class="container">
+		<div class="container">
 
-        <div class="content">
-            <article>
+			<div class="content">
+				<article>
 
-              <div class="post">
-                  <header>
-                    <div class="title">{{ page.title }}</div>
-                    <div class="date">{{ page.date | date: '%B %d, %Y' }} by <em>{{ site.author }}</em></div>
-                  </header>
+					<div class="post">
+						<header>
+							<div class="title">{{ page.title }}</div>
+							<div class="date">{{ page.date | date: '%B %d, %Y' }} by
+								<em>{{ site.author }}</em>
+							</div>
+						</header>
 
-                  <div class="text">
-                    {{ content }}
-                  </div>
-                  <div class="divider"></div>
-              </div>
+						<div class="text">
+							{{ content }}
+						</div>
+						<div class="divider"></div>
+					</div>
 
-              <article>
-                <div class="post">
-                    <div class="title">Comments</div>
+					<article>
+						<div class="post">
+							<div class="title">Comments</div>
 
-                    <div id="disqus_thread"></div>
-                </div>
+							<div class="text">
+								<p><em>
+									Moving from Disqus to self-hosted solution
+								</em></p>
+							</div>
+						</div>
 
-              </article>
+					</article>
 
-              <footer>
-                <div class="post">
-                  <a title="Home page" href="/" class="button icon-home"> Homepage</a>
-                  <a title="Blog posts" href="/posts/" class="button icon-blog"> Blog posts</a>
-                  <a title="Projects" href="/projects/" class="button icon-code"> Projects</a>
-                </div>
-              </footer>
+					<footer>
+						<div class="post">
+							<a title="Home page" href="/" class="button icon-home"> Homepage</a>
+							<a title="Blog posts" href="/posts/" class="button icon-blog"> Blog posts</a>
+							<a title="Projects" href="/projects/" class="button icon-code"> Projects</a>
+						</div>
+					</footer>
 
-            </article>
-        </div>
+				</article>
+			</div>
 
-      </div>
+		</div>
 
-    </main>
+	</main>
 
-    <footer class="content">
-        {% include footer.html %}
-    </footer>
+	<footer class="content">
+		{% include footer.html %}
+	</footer>
 
-  </body>
+</body>
 
 </html>

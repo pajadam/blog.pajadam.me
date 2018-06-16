@@ -4,26 +4,26 @@ layout: default
 
 <div class="content">
 
-    {% for post in paginator.posts %}
-        <article>
-            {% include post.html %}
-        </article>
-    {% endfor %}
+	{% for post in paginator.posts %}
+		<article>
+			{% include post.html %}
+		</article>
+	{% endfor %}
 
 </div>
 
 <div class="paginate">
-  
-    {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="button active"><<</a>
-    {% else %}
-        <a class="button noselect">&nbsp;</a>
-    {% endif %}
-        <span class="noselect">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="button active">>></a>
-    {% else %}
-        <a class="button noselect">&nbsp;</a>
-    {% endif %}
-    
+
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="button active"><<</a>
+	{% else %}
+		<a class="button noselect">&nbsp;</a>
+	{% endif %}
+		<span class="noselect">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="button active">>></a>
+	{% else %}
+		<a class="button noselect">&nbsp;</a>
+	{% endif %}
+
 </div>

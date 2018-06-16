@@ -1,60 +1,58 @@
-.header{
-    width: 100%;
-    font-size: 32px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
-    border-bottom: 2px solid rgba(0, 0, 0, .5);
-    background-color: rgba(0, 0, 0, .3);
+.header {
+  width: 100%;
+  font-size: 32px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .3);
 }
 
-.header .inner{
-    margin: 0px auto;
-    padding: 6px 0px;
-    max-width: 960px;
+.header .inner {
+  margin: 0px auto;
+  padding: 6px 0px;
+  max-width: 960px;
 }
 
-.header .inner a{
-    padding: 6px 12px;
-    font-weight: bold;
+.header .inner a {
+  padding: 6px 12px;
+  font-weight: bold;
 }
 
-.header .inner a:hover{
-    background-color: rgba(0, 0, 0, .5);
+.header .inner a:hover {
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .header .left,
-.header .center{
-    float: left;
-    color: rgba(255, 255, 255, .5);
+.header .center {
+  float: left;
+  color: rgba(255, 255, 255, .5);
 }
 
-.header .left a{
-    padding: 6px 32px;
-    border-right: 2px dashed rgba(255, 255, 255, .5);
-    margin-right: 32px;
+.header .left a {
+  padding: 6px 32px;
+  border-right: 2px dashed rgba(255, 255, 255, .5);
+  margin-right: 32px;
 }
 
-.header .right{
-    float: right;
+.header .right {
+  float: right;
 }
 
 @media screen and (max-width: 768px) {
-    .header{
-        font-size: 26px;
-    }
-
-    .header .center{
-        display: none;
-    }
-
-    .header .left a{
-        padding: 6px 12px;
-        border-right: none;
-        margin-right: 0px;
-    }
+  .header {
+    font-size: 26px;
+  }
+  .header .center {
+    display: none;
+  }
+  .header .left a {
+    padding: 6px 12px;
+    border-right: none;
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .header{
-        font-size: 36px;
-    }
+  .header {
+    font-size: 36px;
+  }
 }

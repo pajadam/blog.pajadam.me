@@ -1,7 +1,8 @@
 title: Developer's Blog | Adam Pajkert ( pajadam )
 description: >
   Blog about everything, especially coding and technologies.
-  Written by young developer from Poland. Adam Pajkert ( pajadam ).
+  Written by young developer from Poland.
+  by Adam Pajkert ( pajadam ).
 altname: Adam Pajkert | pajadam
 author: Adam Pajkert
 baseurl: ""
@@ -19,7 +20,7 @@ paginate_path: "/posts/:num/"
 permalink: /posts/:title/
 
 jekyll-press:
-  exclude: [ 'sitemap.xml', 'robots.txt' ]
+  exclude: [ 'sitemap.xml', 'robots.txt', 'feed.xml' ]
   js_options: {}
   css_options: {}
   html_options: {}

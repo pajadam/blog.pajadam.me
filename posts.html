@@ -2,20 +2,18 @@
 title: Blog posts
 layout: default
 description: >
-    Developer's blog about technologies, software, coding and more.
-    Feel free to check it out.
+  Developer's blog about technologies, software, coding and more.
+  Feel free to check it out.
 ---
 
 <div class="content">
 
-    {% for post in site.posts %}
-
-        {% unless post.categories contains 'project' %}
-            <article>
-                {% include post.html %}
-            </article>
-        {% endunless %}
-
-    {% endfor %}
+	{% for post in site.posts %}
+		{% unless post.categories contains 'project' %}
+			<article>
+				{% include post.html %}
+			</article>
+		{% endunless %}
+	{% endfor %}
 
 </div>
