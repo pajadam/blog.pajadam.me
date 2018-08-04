@@ -1,0 +1,20 @@
+{
+    "name": "blog.pajadam.me",
+    "short_name": "blog.pajadam.me",
+    "icons": [
+        {
+            "src": "/data/favicon/android-chrome-192x192.png?v=m2L2gPqrPB",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/data/favicon/android-chrome-512x512.png?v=m2L2gPqrPB",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#276a62",
+    "background_color": "#276a62",
+    "start_url": "https://blog.pajadam.me",
+    "display": "standalone"
+}
